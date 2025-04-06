@@ -22,7 +22,7 @@ export function MobileNav({ data }: MobileNavProps) {
         </SheetTrigger>
         <SheetContent side="right" className="sm:max-w-none w-full">
           <nav className="grid items-center px-4 md:px-8 lg:px-12 gap-5 mt-12">
-            <Link href="/" className="inline-block">
+            <Link href="/" target="_blank" className="inline-block">
               <Image
                 src={data.logo.url}
                 alt="AppRocket Logo"
@@ -36,6 +36,7 @@ export function MobileNav({ data }: MobileNavProps) {
                 <Link
                   key={index}
                   href={link.url}
+                  target="_blank"
                   className="text-lg font-medium hover:text-primary transition-colors ml-3"
                 >
                   {link.text}

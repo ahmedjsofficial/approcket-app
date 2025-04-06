@@ -32,7 +32,7 @@ export default function Header({ data }: HeaderProps) {
       )}
     >
       <div className="w-[95%] mx-auto flex h-[9vh] items-center justify-between">
-        <Link href="/" className="inline-block">
+        <Link href="/" className="inline-block" target="_blank">
           <Image
             src={data.logo.url}
             alt="AppRocket Logo"

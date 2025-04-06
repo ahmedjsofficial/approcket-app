@@ -20,7 +20,7 @@ export function DesktopNav({ data }: DesktopNavProps) {
         <NavigationMenuList>
           {data.nav_links.map((link, index) => (
             <NavigationMenuItem key={index}>
-              <Link href={link.url} legacyBehavior passHref>
+              <Link href={link.url} target="_blank" legacyBehavior passHref>
                 <NavigationMenuLink className={"hover:text-[#f04e30] text-black  hover:bg-transparent font-semibold"}>
                   {link.text}
                 </NavigationMenuLink>
