@@ -3,16 +3,14 @@ import { Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { metadataConfig } from "@/config/metadata";
 
 const geistSans = Playfair_Display({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "AppRocket",
-  description: "AppRocket - We build technologies that make a difference.",
-};
+export const metadata: Metadata = metadataConfig;
 
 export default function RootLayout({
   children,
